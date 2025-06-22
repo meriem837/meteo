@@ -4,27 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meteo App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <header>
-      <input type="search" placeholder="Enter a city..." required />
-      <input type="submit" value="search" />
-    </header>
-    <main>
-      <div>
-        <h1>Paris</h1>
-        <p>
-          Sunday 18:33, clear sky <br />
-          Humidity: 38%, Wind: 2.57km/h
-        </p>
-        <div>30 °C</div>
-      </div>
-    </main>
-    <footer>
-      Built by<a href="https://github.com/meriem837"> Meriem Elazzaoui</a>, code
-      hosted on <a href="https://github.com/meriem837/meteo">Github</a> and
-      website hosted on
-      <a href="https://best-meteo-app.netlify.app/">Netlify</a>
-    </footer>
+    <div class="weather-app">
+      <header>
+        <input
+          type="search"
+          placeholder="Enter a city..."
+          required
+          class="search-form-input"
+        />
+        <input type="submit" value="search" class="search-form-button" />
+      </header>
+      <main>
+        <div>
+          <h1>Paris</h1>
+          <p>
+            Sunday 18:33, clear sky <br />
+            Humidity: <span>38%</span>, <span> 2.57km/h</span>
+          </p>
+          <div class="weather-app-temperature">
+            <div class="imoji">☀️</div>
+            <div class="number">30</div>
+            <div class="unit">°C</div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        This project was coded by<a href="https://github.com/meriem837">
+          Meriem Elazzaoui</a
+        >, is
+        <a href="https://github.com/meriem837/meteo">open-sourced on Github</a>
+        and
+        <a href="https://best-meteo-app.netlify.app/"> hosted on Netlify</a>
+      </footer>
+    </div>
   </body>
 </html>
