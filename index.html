@@ -15,18 +15,21 @@
   <body>
     <div class="weather-app">
       <header>
-        <input
-          type="search"
-          placeholder="Enter a city..."
-          required
-          class="search-form-input"
-        />
-        <input type="submit" value="search" class="search-form-button" />
+        <form id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            class="search-form-input"
+            id="search-form-input"
+          />
+          <input type="submit" value="search" class="search-form-button" />
+        </form>
       </header>
       <main>
         <div class="weather-app-data">
           <div>
-            <h1>Paris</h1>
+            <h1 id="city">Paris</h1>
             <p>
               Sunday 18:33, clear sky <br />
               Humidity: <span>38%</span>,Wind: <span> 2.57km/h</span>
@@ -48,5 +51,6 @@
         <a href="https://best-meteo-app.netlify.app/"> hosted on Netlify</a>
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
