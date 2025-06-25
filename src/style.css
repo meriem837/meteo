@@ -59,14 +59,15 @@ strong {
 .temperature {
   font-size: 88px;
   font-weight: bold;
+  margin-left: 10px;
+  line-height: 88px;
 }
-.imoji {
-  font-size: 44px;
-  margin-top: 22px;
-  margin-right: 10px;
+.weather-app-icon {
+  font-size: 88px;
+  height: 88px;
 }
 .unit {
-  margin-top: 15px;
+  margin-top: 6px;
   font-size: 28px;
 }
 footer {
