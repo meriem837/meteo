@@ -62,7 +62,6 @@ function getForecast(city) {
   axios.get(apiUrl).then(displayForecast);
 }
 function displayForecast(response) {
-  console.log(response.data);
   let forecastHtml = "";
   response.data.daily.forEach(function (day, index) {
     if (index < 5) {
